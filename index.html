@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- 자동 생성 파일입니다. 직접 수정하지 말고 sections/, css/, js/ 를 수정한 뒤 `python build.py` 를 실행하세요. -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DR. MINARI | 닥터미나리</title>
+<meta name="description" content="생각장난, 망한김에 닥치고 책읽기, 닥터미나리. 생물공학박사의 칼럼과 천인샵 프로젝트">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- ===== CSS (섹션별) ===== -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/columns.css">
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+<!-- ========== SECTION: 상단 메뉴 (nav.css) ========== -->
+<header class="nav"><nav class="pill" aria-label="주요 메뉴">
+  <img src="assets/images/logo.jpg" alt="닥터미나리 로고">
+  <!-- 메뉴를 추가/삭제하려면 아래 <a> 한 줄을 복사/삭제하세요. href는 각 섹션의 id와 맞춥니다. -->
+  <a href="#columns">칼럼</a><a href="#shop">천인샵</a><a href="#about">소개</a><a href="#contact" class="go">문의</a>
+  <button id="theme" aria-label="화면 모드 전환">◐</button>
+</nav><div class="dday" role="timer" aria-label="디데이 카운터"><small>Memento mori</small><b id="dnum">D-9999</b></div></header>
+
+<main>
+
+<!-- ========== SECTION: 메인 히어로 (hero.css) ========== -->
+<div class="topimg"><img src="assets/images/hero-main.jpg" alt="닥터미나리 메인 이미지: 미나리, 식품, 캡슐, 화장품"></div>
+<div class="w">
+<div class="hero">
+  <div class="lab">식품. 의약품. 화장품 · Derma Herbal Science · K-Beauty</div>
+  <h1 class="word">닥터미나리</h1><div class="en">DR. MINARI</div>
+  <p class="subt">쓰고 먹고 마시고 바르는 것의 원리</p>
+  <p class="subt">나만 빼고 모두 다 아는 세계</p>
+  <div class="by"><img src="assets/images/character.jpg" alt="닥터미나리 캐릭터">Column by 닥터미나리</div>
+</div>
+<!-- 앱 아이콘 타일은 js/data/categories.js 의 칼럼 목록으로 자동 생성됩니다 -->
+<div class="stage"><div class="screen">
+  <div class="mini"><b>Dr. Minari</b><span>칼럼 · 프로젝트 · 소개</span><span class="mini-btn">Read</span></div>
+  <div class="tiles" id="tiles"></div>
+  <div class="cap">생각하고, 읽고, 만들고, 나눕니다</div>
+</div></div>
+</div>
+
+<!-- ========== SECTION: 칼럼 (columns.css) ==========
+     칼럼 목록/카테고리는 여기서 수정하지 않고 js/data/ 폴더에서 관리합니다. -->
+<section id="columns"><div class="w">
+  <h2>칼럼</h2><p class="sub">세 갈래의 칼럼과 하나의 프로젝트를 운영합니다.</p>
+  <div class="intro" id="intro"></div>
+  <div class="tools"><span id="chips" class="chips"></span><input class="q" id="q" type="search" placeholder="제목·키워드 검색" aria-label="칼럼 검색"></div>
+  <div class="grid" id="list"></div>
+  <div class="empty" id="empty" hidden>조건에 맞는 칼럼이 없습니다. 다른 목록이나 키워드를 선택해 보세요.</div>
+</div></section>
+
+<!-- ========== SECTION: 천인샵 (shop.css) ========== -->
+<section id="shop"><div class="w"><div class="shop">
+ <div>
+  <span class="badge">기획 중 프로젝트 · 딱 천 명만</span>
+  <h2>천인샵<small>1000 人 STORE</small></h2>
+  <p class="lead">천 명의, 천 명에 의한, 천 명을 위한 프로젝트!</p>
+  <p>그동안 몸에 좋다, 낫는다, 돈 된다, 좋아진다… 시장에 속고, 광고에 속고, 전문가에 속고, 주변 정보에 휘둘려 살아온 미나리들을 위한 스토어.</p>
+  <p><b>이제 딱 천 명의 미나리들, 그들과 함께 한다.</b></p>
+  <div class="trio"><span>안심구매</span><span>적정가격</span><span>좋은제품</span></div>
+  <a class="btn" id="notify" href="#">천인 모집 · 오픈 알림 신청</a>
+ </div>
+ <img class="slogo" src="assets/images/store-logo.jpg" alt="1000 STORE 천인스토어 로고">
+</div></div></section>
+
+<!-- ========== SECTION: 소개 (about.css) ========== -->
+<section id="about"><div class="w about">
+  <img src="assets/images/about-bottle.jpg" alt="닥터미나리 로고와 미나리 에센스 병">
+  <div>
+    <h2>소개</h2>
+    <p class="sub">생물공학 박사. 발효, 식물 유래 성분, 기능성 원료를 연구합니다. 
+     <span class="ed">편집포인트: 소속·경력</span></p>
+    <ul><li>닥터미나리: 식의약 화장품, Derma-Food Science</li><li>전문 분야: 발효, 파이토케미컬, 기능성 원료</li><li>주요 소재: 발효다당체, 발효미네랄, 유산균, 배지, 식물 추출물</li></ul>
+  </div>
+</div></section>
+
+<!-- ========== SECTION: 브랜드 배너 이미지 (about.css 의 .wide) ========== -->
+<div class="w"><img class="wide" src="assets/images/brand-banner.jpg" alt="닥터미나리 브랜드 이미지"></div>
+
+<!-- ========== SECTION: 문의 · 구독 (contact.css) ========== -->
+<section id="contact"><div class="w">
+ <h2>문의</h2><p class="sub">칼럼구독, 협업문의 신청</p>
+ <form id="form" novalidate>
+  <div class="fld"><label for="fn">닉네임</label><input id="fn" name="n" placeholder="닉네임을 입력해 주세요" autocomplete="nickname"></div>
+  <div class="fld row"><label for="fe">이메일</label><span class="mi" aria-hidden="true">✉</span><input id="fe" name="e" type="email" placeholder="example@gmail.com" autocomplete="email"><button type="button" id="subBtn" class="sub2">구독</button></div>
+  <div class="fld"><label for="fm">협업문의 내용 (협업 문의 시 입력)</label><textarea id="fm" name="m" rows="4" placeholder="협업·문의 내용을 적어 주세요"></textarea></div>
+  <label class="chk"><input type="checkbox" name="agree"><span><b>[필수]</b> <a href="#" id="pp">개인정보처리방침</a>에 동의합니다.</span></label>
+  <label class="chk"><input type="checkbox" name="ad"><span><b>[선택]</b> 닥터미나리의 광고성 정보 수신에 동의합니다.</span></label>
+  <div id="fmsg" role="alert"></div>
+  <button type="button" class="send" id="mailBtn">메일 앱으로 보내기</button>
+  <!-- 이메일 주소는 js/config.js 의 SITE.email 을 바꾸면 자동 반영됩니다 -->
+  <p class="note">메일 앱이 열리지 않으면 <a id="mailLink" href="#"></a> 으로 직접 보내 주세요.</p>
+ </form>
+</div></section>
+
+</main>
+
+<!-- ========== SECTION: 푸터 (footer.css) ========== -->
+<footer><div class="w">© <span id="yr"></span> Dr. Minari. 칼럼은 정보 제공 목적이며 사실과 다른내용 의견 있으시면 연락주세요.</div></footer>
+
+<!-- ========== 팝업: 칼럼 읽기 / 개인정보처리방침 (modal.css) ========== -->
+<dialog id="dlg" aria-label="칼럼 읽기"><article class="sheet" id="sheet"></article></dialog>
+
+<!-- ===== JS: ① 설정 ===== -->
+<script src="js/utils.js"></script>
+<script src="js/config.js"></script>
+
+<!-- ===== JS: ② 콘텐츠 데이터 (칼럼 추가/수정은 여기) ===== -->
+<script src="js/data/_helpers.js"></script>
+<script src="js/data/categories.js"></script>
+<script src="js/data/posts-minari.js"></script>
+<script src="js/data/posts-play.js"></script>
+<script src="js/data/posts-book.js"></script>
+<script src="js/data/privacy.js"></script>
+
+<!-- ===== JS: ③ 기능 (섹션별) ===== -->
+<script src="js/icons.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/sections/nav.js"></script>
+<script src="js/sections/hero.js"></script>
+<script src="js/sections/columns.js"></script>
+<script src="js/sections/shop.js"></script>
+<script src="js/sections/contact.js"></script>
+<script src="js/sections/footer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

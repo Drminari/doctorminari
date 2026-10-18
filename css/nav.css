@@ -1,0 +1,22 @@
+/* ==========================================================
+   nav.css — 상단 알약형 메뉴 + D-DAY 카운터
+   (sections/header-nav.html)
+   ========================================================== */
+.nav{position:sticky;top:calc(10px + env(safe-area-inset-top,0px));z-index:20;display:flex;justify-content:center;padding:0 12px}
+.pill{display:flex;align-items:center;gap:4px;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:999px;padding:5px 6px 5px 12px;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.pill img{height:26px;width:26px;border-radius:50%;object-fit:cover;margin-right:6px}
+.pill a,.pill button{white-space:nowrap;text-decoration:none;font-size:.85rem;padding:7px 12px;border-radius:999px;color:var(--ink);border:0;background:none;font-family:inherit;cursor:pointer}
+.pill a:hover,.pill button:hover{background:var(--line)}
+.pill .go{background:var(--ink);color:var(--bg)}
+
+/* D-DAY 카운터 */
+.dday{position:absolute;right:18px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);border-radius:999px;padding:6px 14px;font-family:Inter,sans-serif;white-space:nowrap}
+.dday small{font-size:.62rem;opacity:.7;letter-spacing:.08em}
+.dday b{font-size:.95rem;font-weight:800}
+
+@media(max-width:760px){
+  .nav{gap:6px}
+  .pill{flex:1;min-width:0}
+  .dday{position:static;transform:none;padding:6px 11px;flex:none}
+  .dday small{display:none}
+}

@@ -1,0 +1,17 @@
+/* ==========================================================
+   contact.css — 문의 · 구독 폼
+   (sections/contact.html)
+   ========================================================== */
+form{display:grid;gap:10px;max-width:560px}
+.fld{position:relative}
+.fld label{position:absolute;top:-9px;left:12px;background:var(--bg);padding:0 5px;font-size:.78rem;font-weight:700;z-index:1}
+.fld input,.fld textarea{border-radius:10px;padding:14px}
+.fld.row{display:flex;border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
+.fld.row input{border:0;border-radius:0;background:none;flex:1;min-width:0}
+.mi{display:grid;place-items:center;padding-left:14px;color:var(--mut)}
+.sub2{border:0;background:#1A6B45;color:#fff;padding:0 24px;font:inherit;font-weight:700;cursor:pointer}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;cursor:pointer}
+.chk input{width:18px;height:18px;margin-top:4px;accent-color:#1A6B45;flex:none;padding:0}
+.send{justify-self:start;border:0;background:var(--ink);color:var(--bg);padding:12px 24px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.note{margin:0;font-size:.82rem;color:var(--mut)}
+#fmsg{color:#C0392B;font-size:.85rem;min-height:1.2em}

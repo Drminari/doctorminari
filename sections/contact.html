@@ -1,0 +1,15 @@
+<!-- ========== SECTION: 문의 · 구독 (contact.css) ========== -->
+<section id="contact"><div class="w">
+ <h2>문의</h2><p class="sub">칼럼구독, 협업문의 신청</p>
+ <form id="form" novalidate>
+  <div class="fld"><label for="fn">닉네임</label><input id="fn" name="n" placeholder="닉네임을 입력해 주세요" autocomplete="nickname"></div>
+  <div class="fld row"><label for="fe">이메일</label><span class="mi" aria-hidden="true">✉</span><input id="fe" name="e" type="email" placeholder="example@gmail.com" autocomplete="email"><button type="button" id="subBtn" class="sub2">구독</button></div>
+  <div class="fld"><label for="fm">협업문의 내용 (협업 문의 시 입력)</label><textarea id="fm" name="m" rows="4" placeholder="협업·문의 내용을 적어 주세요"></textarea></div>
+  <label class="chk"><input type="checkbox" name="agree"><span><b>[필수]</b> <a href="#" id="pp">개인정보처리방침</a>에 동의합니다.</span></label>
+  <label class="chk"><input type="checkbox" name="ad"><span><b>[선택]</b> 닥터미나리의 광고성 정보 수신에 동의합니다.</span></label>
+  <div id="fmsg" role="alert"></div>
+  <button type="button" class="send" id="mailBtn">메일 앱으로 보내기</button>
+  <!-- 이메일 주소는 js/config.js 의 SITE.email 을 바꾸면 자동 반영됩니다 -->
+  <p class="note">메일 앱이 열리지 않으면 <a id="mailLink" href="#"></a> 으로 직접 보내 주세요.</p>
+ </form>
+</div></section>

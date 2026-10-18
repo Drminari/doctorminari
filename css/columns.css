@@ -1,0 +1,24 @@
+/* ==========================================================
+   columns.css — 칼럼 섹션 (카테고리 소개 · 필터 · 검색 · 카드 목록)
+   (sections/columns.html)
+   ========================================================== */
+/* 카테고리 소개 박스 */
+.intro{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:22px}
+.ic{border-radius:14px;padding:16px 18px;border:0;text-align:left;font:inherit;cursor:pointer;line-height:1.5}
+.ic b{display:block;font-size:1.02rem}
+.ic span{font-size:.86rem}
+
+/* 필터 칩 + 검색창 */
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 15px;border-radius:999px;font:inherit;font-size:.88rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.q{flex:1;min-width:170px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;font:inherit}
+
+/* 칼럼 카드 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:10px;transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card h3{margin:0;font-size:1.1rem;line-height:1.4;letter-spacing:-.02em}
+.card p{margin:0;color:var(--mut);font-size:.92rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.empty{text-align:center;color:var(--mut);padding:36px 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap}

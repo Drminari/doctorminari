@@ -1,0 +1,5 @@
+/* ==========================================================
+   footer.css — 하단 푸터
+   (sections/footer.html)
+   ========================================================== */
+footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--mut);font-size:.82rem}

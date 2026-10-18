@@ -1,0 +1,20 @@
+/* ==========================================================
+   shop.css — 천인샵(1000 STORE) 섹션
+   (sections/shop.html)
+   ========================================================== */
+.shop{background:var(--dark);color:#F2F2EF;border-radius:14px;padding:clamp(24px,5vw,60px);display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.shop h2{color:#fff}
+.shop h2 small{font-size:.45em;font-weight:700;color:#9DB4E8;margin-left:10px;letter-spacing:.05em}
+.shop p{color:#B9B9B4;margin:10px 0 18px}
+.shop .lead{color:#fff;font-weight:700;font-size:1.1rem}
+.badge{display:inline-block;border:1px solid #555;border-radius:999px;padding:3px 12px;font-size:.78rem;color:#DADAD6;margin-bottom:14px}
+.trio{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.trio span{border-radius:999px;padding:5px 14px;font-size:.85rem;font-weight:700;color:#0B2A5B}
+.trio span:nth-child(1){background:#8DBBFF}
+.trio span:nth-child(2){background:#6FE0A6}
+.trio span:nth-child(3){background:#FFC857}
+.btn{display:inline-block;background:#fff;color:#141414;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.9rem}
+.slogo{width:100%;max-width:340px;margin:auto;border-radius:20px;background:#fff;padding:10px;display:block}
+
+@media(max-width:760px){.shop{grid-template-columns:1fr}}
+.shop b{color:#fff}

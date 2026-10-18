@@ -1,0 +1,33 @@
+/* ==========================================================
+   base.css — 전체 공통 (색상 변수 · 리셋 · 레이아웃 · 공통 요소)
+   색상/폰트를 바꾸고 싶으면 이 파일의 :root 값만 수정하세요.
+   ========================================================== */
+:root{--bg:#E8E8E6;--ink:#141414;--mut:#6B6B68;--card:#F4F4F2;--line:#CFCFCB;--dark:#202020;--g:#3A8A3F;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121312;--ink:#EDEDEA;--mut:#9A9A95;--card:#1B1C1B;--line:#2E2F2E;--dark:#0A0A0A}}
+:root[data-theme="dark"]{--bg:#121312;--ink:#EDEDEA;--mut:#9A9A95;--card:#1B1C1B;--line:#2E2F2E;--dark:#0A0A0A}
+
+*{box-sizing:border-box}
+html{height:auto;scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter','Noto Sans KR','Malgun Gothic',sans-serif;line-height:1.7;word-break:keep-all;background-color:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+
+/* 공통 레이아웃 */
+.w{max-width:1120px;margin:0 auto;padding:0 18px}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,4vw,2.2rem);letter-spacing:-.03em;margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 22px}
+
+/* 공통 부품: 카테고리 점 라벨 · 메타(날짜/읽는시간) */
+.dot{display:inline-flex;align-items:center;gap:7px;font-size:.8rem;font-weight:700}
+.dot i{width:10px;height:10px;border-radius:3px;background:var(--c)}
+.meta{font-size:.78rem;color:var(--mut);margin-top:auto}
+
+/* 공통 입력창 */
+input,textarea{width:100%;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:11px 14px;font:inherit}
+
+/* "편집포인트" 표시 (나중에 실제 내용으로 교체할 자리) */
+.ed{background:rgba(58,138,63,.18);padding:1px 6px;border-radius:4px;font-size:.85em}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
