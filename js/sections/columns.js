@@ -36,7 +36,7 @@ function openPost(p) {
     `<h2>${p.title}</h2>` +
     `<div class="meta" style="margin-bottom:18px">${p.date} · ${p.min}분</div>` +
     `<p><b>${p.summary}</b></p>` +
-    p.body.map(t => `<p>${t}</p>`).join("")
+    p.body.map(t => { const h = fmt(t); return /<(table|blockquote)/.test(h) ? `<div>${h}</div>` : `<p>${h}</p>`; }).join("")
   );
 }
 

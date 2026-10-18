@@ -7,6 +7,10 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .sheet{background:var(--card);color:var(--ink);max-width:700px;margin:4vh auto;max-height:92vh;overflow:auto;border-radius:16px;padding:28px 26px 34px}
 .sheet h2{font-size:1.6rem;margin:8px 0}
 .sheet p{margin:0 0 1.1em}
+.sheet blockquote{margin:0 0 1.1em;padding:10px 16px;border-left:4px solid var(--line);background:rgba(127,127,127,.08);border-radius:0 8px 8px 0}
+.sheet table{border-collapse:collapse;width:100%;margin:0 0 1.1em;font-size:.92em;display:block;overflow-x:auto}
+.sheet th,.sheet td{border:1px solid var(--line);padding:6px 10px;text-align:right;font-weight:400;white-space:nowrap}
+.sheet tr:first-child th,.sheet th:first-child{text-align:left;font-weight:700}
 .x{float:right;border:1px solid var(--line);background:none;color:var(--ink);border-radius:999px;padding:5px 14px;font:inherit;cursor:pointer}
 
 @media(max-width:760px){.sheet{margin:0;height:100%;max-height:100vh;border-radius:0}}
